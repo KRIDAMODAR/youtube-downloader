@@ -19,13 +19,11 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .blob-2{width:400px;height:400px;background:radial-gradient(circle,rgba(255,100,60,0.08),transparent 70%);bottom:100px;right:-100px;animation:float2 10s ease-in-out infinite}
 @keyframes float1{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(30px)}}
 @keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(-40px)}}
-
 nav{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:22px 40px;border-bottom:1px solid var(--border);backdrop-filter:blur(20px);background:rgba(10,10,12,0.7)}
 .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;display:flex;align-items:center;gap:10px}
 .logo-icon{width:34px;height:34px;background:var(--red);border-radius:8px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px var(--red-glow)}
 .logo-icon svg{width:16px;height:16px;fill:white}
 .nav-badge{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:500;background:rgba(255,45,45,0.15);border:1px solid rgba(255,45,45,0.3);color:var(--red-soft);padding:3px 10px;border-radius:20px}
-
 main{position:relative;z-index:5;max-width:780px;margin:0 auto;padding:70px 24px 80px}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,45,45,0.1);border:1px solid rgba(255,45,45,0.25);border-radius:20px;padding:5px 14px;font-size:0.75rem;font-weight:500;color:var(--red-soft);margin-bottom:28px;animation:fadeDown .6s ease both}
 .hero-tag span{width:6px;height:6px;background:var(--red);border-radius:50%;animation:pulse 1.5s ease-in-out infinite}
@@ -35,10 +33,8 @@ h1 em{font-style:normal;color:var(--red)}
 .subtitle{color:var(--muted);font-size:1.05rem;line-height:1.7;max-width:520px;margin-bottom:48px;animation:fadeDown .6s .2s ease both}
 @keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-
 .card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:32px;animation:fadeUp .7s .3s ease both;position:relative;overflow:hidden}
 .card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,45,45,0.4),transparent)}
-
 .input-row{display:flex;gap:10px;margin-bottom:20px}
 .url-input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 18px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:0.95rem;outline:none;transition:border-color .2s,box-shadow .2s}
 .url-input::placeholder{color:#555}
@@ -46,19 +42,13 @@ h1 em{font-style:normal;color:var(--red)}
 .fetch-btn{background:var(--red);color:white;border:none;border-radius:12px;padding:14px 24px;font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;cursor:pointer;transition:background .2s,transform .15s,box-shadow .2s;white-space:nowrap;box-shadow:0 4px 20px rgba(255,45,45,0.3);display:flex;align-items:center;gap:8px}
 .fetch-btn:hover{background:#e62020;transform:translateY(-1px);box-shadow:0 6px 28px rgba(255,45,45,0.45)}
 .fetch-btn:disabled{opacity:0.5;cursor:not-allowed;transform:none}
-.fetch-btn svg{width:16px;height:16px;fill:white}
-
 .section-label{font-family:'Syne',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
-
 .format-tabs{display:flex;gap:8px;margin-bottom:28px}
 .tab{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px;border-radius:11px;border:1px solid var(--border);background:var(--surface);cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif;font-weight:500;font-size:.9rem;color:var(--muted)}
-.tab svg{width:17px;height:17px;flex-shrink:0}
 .tab:hover{border-color:rgba(255,45,45,0.3);color:var(--text)}
 .tab.active{background:rgba(255,45,45,0.12);border-color:rgba(255,45,45,0.45);color:var(--red-soft)}
-
 .resolution-panel,.audio-panel{display:none}
 .resolution-panel.visible,.audio-panel.visible{display:block}
-
 .res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:28px}
 .res-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 12px;text-align:center;cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
 .res-card:hover{border-color:rgba(255,45,45,0.3);transform:translateY(-2px)}
@@ -71,7 +61,6 @@ h1 em{font-style:normal;color:var(--red)}
 .badge-fhd{background:rgba(0,255,180,0.15);color:#5bffcc;border:1px solid rgba(0,255,180,0.2)}
 .badge-4k{background:rgba(255,200,0,0.15);color:#ffcd3c;border:1px solid rgba(255,200,0,0.2)}
 .badge-sd{background:rgba(150,150,150,0.15);color:#aaa;border:1px solid rgba(150,150,150,0.2)}
-
 .audio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:28px}
 .audio-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 12px;text-align:center;cursor:pointer;transition:all .2s;position:relative}
 .audio-card:hover{border-color:rgba(29,185,84,0.4);transform:translateY(-2px)}
@@ -80,9 +69,7 @@ h1 em{font-style:normal;color:var(--red)}
 .audio-icon{font-size:1.5rem;margin-bottom:6px}
 .audio-label{font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:2px}
 .audio-sub{font-size:.7rem;color:var(--muted)}
-
 .divider{height:1px;background:var(--border);margin:24px 0}
-
 .status-box{display:none;border-radius:12px;padding:14px 16px;margin-bottom:18px;font-size:.88rem;border:1px solid;animation:fadeUp .3s ease both}
 .status-box.visible{display:flex;align-items:center;gap:12px}
 .status-box.loading{background:rgba(255,180,0,0.08);border-color:rgba(255,180,0,0.25);color:#ffc44d}
@@ -91,159 +78,140 @@ h1 em{font-style:normal;color:var(--red)}
 .status-spin{width:18px;height:18px;border:2px solid currentColor;border-top-color:transparent;border-radius:50%;flex-shrink:0;animation:spin .7s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .status-icon{font-size:1.1rem;flex-shrink:0}
-
 .download-btn{width:100%;padding:16px;background:linear-gradient(135deg,var(--red),#d91f1f);color:white;border:none;border-radius:13px;font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;cursor:pointer;transition:all .2s;box-shadow:0 6px 30px rgba(255,45,45,0.35);display:flex;align-items:center;justify-content:center;gap:10px;position:relative;overflow:hidden}
-.download-btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent);transition:left .4s}
-.download-btn:hover::before{left:100%}
 .download-btn:hover{transform:translateY(-2px);box-shadow:0 8px 36px rgba(255,45,45,0.5)}
 .download-btn:disabled{opacity:0.5;cursor:not-allowed;transform:none;box-shadow:none}
-.download-btn svg{width:18px;height:18px;fill:white;flex-shrink:0}
 .download-btn.audio-mode{background:linear-gradient(135deg,var(--green),#158c3d);box-shadow:0 6px 30px rgba(29,185,84,0.35)}
-.download-btn.audio-mode:hover{box-shadow:0 8px 36px rgba(29,185,84,0.5)}
-
-.result-link{display:none;margin-top:14px;background:rgba(29,185,84,0.08);border:1px solid rgba(29,185,84,0.3);border-radius:12px;padding:16px;animation:fadeUp .4s ease both}
-.result-link.visible{display:block}
-.result-label{font-size:.75rem;color:var(--green);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
-.result-actions{display:flex;gap:10px}
-.btn-dl{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--green);color:white;text-decoration:none;border-radius:10px;padding:12px;font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;transition:all .2s}
-.btn-dl:hover{background:#17a346;transform:translateY(-1px)}
-.btn-copy{background:var(--surface);border:1px solid var(--border);color:var(--muted);border-radius:10px;padding:12px 16px;cursor:pointer;font-size:.85rem;transition:all .2s;white-space:nowrap;font-family:'DM Sans',sans-serif}
-.btn-copy:hover{border-color:rgba(255,255,255,0.2);color:var(--text)}
-
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px;animation:fadeUp .7s .5s ease both}
 .feat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 16px;text-align:center}
 .feat-icon{font-size:1.6rem;margin-bottom:10px}
 .feat-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;margin-bottom:4px}
-.feat-desc{font-size:.75rem;color:var(--muted);line-height:1.5}
-
-.powered{text-align:center;margin-top:24px;font-size:.75rem;color:#444;animation:fadeUp .7s .6s ease both}
-.powered a{color:#666;text-decoration:none}.powered a:hover{color:var(--muted)}
-
-footer{position:relative;z-index:5;text-align:center;padding:24px;border-top:1px solid var(--border);font-size:.75rem;color:var(--muted)}
-footer span{color:var(--red)}
-
-.toast{position:fixed;bottom:30px;right:30px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 20px;font-size:.85rem;box-shadow:0 8px 30px rgba(0,0,0,0.5);transform:translateY(100px);opacity:0;transition:all .3s ease;z-index:100;max-width:300px}
+.feat-sub{font-size:.75rem;color:var(--muted);line-height:1.5}
+.toast{position:fixed;bottom:28px;right:28px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 18px;z-index:999;transform:translateY(20px);opacity:0;transition:all .35s cubic-bezier(.34,1.56,.64,1);pointer-events:none;min-width:220px}
 .toast.show{transform:translateY(0);opacity:1}
-.toast-title{font-weight:600;margin-bottom:3px;color:var(--text)}
-.toast-sub{color:var(--muted)}
-
+.toast-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;margin-bottom:2px}
+.toast-sub{font-size:.78rem;color:var(--muted)}
 @media(max-width:600px){
   nav{padding:16px 20px}
-  main{padding:40px 16px 60px}
-  .res-grid{grid-template-columns:repeat(2,1fr)}
-  .audio-grid{grid-template-columns:repeat(2,1fr)}
+  .res-grid,.audio-grid{grid-template-columns:repeat(2,1fr)}
   .features{grid-template-columns:1fr}
   .input-row{flex-direction:column}
-  .fetch-btn{width:100%;justify-content:center}
 }
 </style>
 </head>
 <body>
-
 <div class="blob blob-1"></div>
 <div class="blob blob-2"></div>
 
 <nav>
   <div class="logo">
-    <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 8l-5 3V8l5 3z"/></svg>
+    </div>
     YTDrop
   </div>
-  <span class="nav-badge">Free · No Sign Up</span>
+  <div class="nav-badge">yt-dlp powered</div>
 </nav>
 
 <main>
-  <div class="hero-tag"><span></span> Real Downloads · Powered by Cobalt</div>
-  <h1>Download <em>YouTube</em><br>Videos &amp; MP3s</h1>
-  <p class="subtitle">Paste any YouTube URL and download in your preferred resolution — up to 4K — or extract the audio as a high-quality MP3. Works instantly, no account needed.</p>
+  <div class="hero-tag"><span></span> Free · Fast · No Ads</div>
+  <h1>Download <em>YouTube</em><br>Videos & Audio</h1>
+  <p class="subtitle">Paste any YouTube link, pick your quality — video or MP3 — and download instantly via our yt-dlp backend.</p>
 
   <div class="card">
-
-    <p class="section-label">YouTube URL</p>
+    <div class="section-label">YouTube Link</div>
     <div class="input-row">
-      <input type="text" id="urlInput" class="url-input" placeholder="https://www.youtube.com/watch?v=..."/>
-      <button class="fetch-btn" id="mainBtn" onclick="triggerDownload()">
-        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-        Download
-      </button>
+      <input class="url-input" id="urlInput" type="url" placeholder="https://youtube.com/watch?v=…" autocomplete="off" spellcheck="false"/>
     </div>
 
-    <!-- STATUS -->
-    <div class="status-box" id="statusBox">
-      <div id="statusIcon" class="status-spin"></div>
-      <span id="statusText">Processing...</span>
-    </div>
-
-    <!-- FORMAT TABS -->
-    <p class="section-label">Format</p>
+    <div class="section-label">Format</div>
     <div class="format-tabs">
       <div class="tab active" id="tabVideo" onclick="switchTab('video')">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
-        Video File
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+        Video (MP4)
       </div>
       <div class="tab" id="tabAudio" onclick="switchTab('audio')">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v9.28c-.47-.17-.97-.28-1.5-.28C8.01 12 6 14.01 6 16.5S8.01 21 10.5 21c2.31 0 4.2-1.75 4.45-4H15V6h4V3h-7z"/></svg>
-        MP3 Audio
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/></svg>
+        Audio (MP3)
       </div>
     </div>
 
-    <!-- VIDEO RESOLUTIONS -->
+    <!-- Video panel -->
     <div class="resolution-panel visible" id="resPanel">
-      <p class="section-label">Select Resolution</p>
+      <div class="section-label">Resolution</div>
       <div class="res-grid">
-        <div class="res-card" onclick="selectRes(this,'360')"><div class="res-label">360p</div><div class="res-sub">~50 MB</div><span class="res-badge badge-sd">SD</span></div>
-        <div class="res-card" onclick="selectRes(this,'480')"><div class="res-label">480p</div><div class="res-sub">~80 MB</div><span class="res-badge badge-sd">SD</span></div>
-        <div class="res-card selected" onclick="selectRes(this,'720')"><div class="res-label">720p</div><div class="res-sub">~120 MB</div><span class="res-badge badge-hd">HD</span></div>
-        <div class="res-card" onclick="selectRes(this,'1080')"><div class="res-label">1080p</div><div class="res-sub">~250 MB</div><span class="res-badge badge-fhd">Full HD</span></div>
-        <div class="res-card" onclick="selectRes(this,'1440')"><div class="res-label">1440p</div><div class="res-sub">~500 MB</div><span class="res-badge badge-fhd">QHD</span></div>
-        <div class="res-card" onclick="selectRes(this,'2160')"><div class="res-label">4K</div><div class="res-sub">~1.2 GB</div><span class="res-badge badge-4k">4K UHD</span></div>
+        <div class="res-card" onclick="selectRes(this,'360')">
+          <div class="res-label">360p</div><div class="res-sub">SD</div>
+          <div class="res-badge badge-sd">SD</div>
+        </div>
+        <div class="res-card" onclick="selectRes(this,'480')">
+          <div class="res-label">480p</div><div class="res-sub">SD+</div>
+          <div class="res-badge badge-sd">SD</div>
+        </div>
+        <div class="res-card selected" onclick="selectRes(this,'720')">
+          <div class="res-label">720p</div><div class="res-sub">HD</div>
+          <div class="res-badge badge-hd">HD</div>
+        </div>
+        <div class="res-card" onclick="selectRes(this,'1080')">
+          <div class="res-label">1080p</div><div class="res-sub">Full HD</div>
+          <div class="res-badge badge-fhd">FHD</div>
+        </div>
+        <div class="res-card" onclick="selectRes(this,'1440')">
+          <div class="res-label">1440p</div><div class="res-sub">2K</div>
+          <div class="res-badge badge-4k">2K</div>
+        </div>
+        <div class="res-card" onclick="selectRes(this,'2160')">
+          <div class="res-label">4K</div><div class="res-sub">Ultra HD</div>
+          <div class="res-badge badge-4k">4K</div>
+        </div>
       </div>
-      <div class="divider"></div>
+      <div id="statusBoxVideo" class="status-box">
+        <div id="statusIconVideo" class="status-spin"></div>
+        <span id="statusTextVideo"></span>
+      </div>
       <button class="download-btn" id="dlBtnVideo" onclick="triggerDownload()">
-        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        <svg viewBox="0 0 24 24" fill="white"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
         Download Video · 720p
       </button>
     </div>
 
-    <!-- AUDIO PANEL -->
+    <!-- Audio panel -->
     <div class="audio-panel" id="audioPanel">
-      <p class="section-label">Audio Quality</p>
+      <div class="section-label">Audio Quality</div>
       <div class="audio-grid">
-        <div class="audio-card" onclick="selectAudio(this,'128')"><div class="audio-icon">🎵</div><div class="audio-label">128 kbps</div><div class="audio-sub">Standard</div></div>
-        <div class="audio-card selected" onclick="selectAudio(this,'192')"><div class="audio-icon">🎧</div><div class="audio-label">192 kbps</div><div class="audio-sub">High</div></div>
-        <div class="audio-card" onclick="selectAudio(this,'320')"><div class="audio-icon">🎼</div><div class="audio-label">320 kbps</div><div class="audio-sub">Best</div></div>
+        <div class="audio-card" onclick="selectAudio(this,'128')">
+          <div class="audio-icon">🎵</div>
+          <div class="audio-label">128 kbps</div>
+          <div class="audio-sub">Small file</div>
+        </div>
+        <div class="audio-card selected" onclick="selectAudio(this,'192')">
+          <div class="audio-icon">🎶</div>
+          <div class="audio-label">192 kbps</div>
+          <div class="audio-sub">Balanced</div>
+        </div>
+        <div class="audio-card" onclick="selectAudio(this,'320')">
+          <div class="audio-icon">🎼</div>
+          <div class="audio-label">320 kbps</div>
+          <div class="audio-sub">HQ</div>
+        </div>
       </div>
-      <div class="divider"></div>
+      <div id="statusBoxAudio" class="status-box">
+        <div id="statusIconAudio" class="status-spin"></div>
+        <span id="statusTextAudio"></span>
+      </div>
       <button class="download-btn audio-mode" id="dlBtnAudio" onclick="triggerDownload()">
-        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        <svg viewBox="0 0 24 24" fill="white"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
         Download MP3 · 192 kbps
       </button>
     </div>
-
-    <!-- RESULT LINK -->
-    <div class="result-link" id="resultLink">
-      <div class="result-label">✅ Your file is ready</div>
-      <div class="result-actions">
-        <a id="dlAnchor" href="#" target="_blank" rel="noopener" class="btn-dl">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-          Open / Save File
-        </a>
-        <button class="btn-copy" onclick="copyLink()">📋 Copy Link</button>
-      </div>
-    </div>
-
-  </div><!-- /card -->
-
-  <div class="features">
-    <div class="feat"><div class="feat-icon">⚡</div><div class="feat-title">Real Downloads</div><div class="feat-desc">Powered by Cobalt — actual working video &amp; audio extraction</div></div>
-    <div class="feat"><div class="feat-icon">🔒</div><div class="feat-title">No Sign Up</div><div class="feat-desc">No account, no tracking, no watermarks</div></div>
-    <div class="feat"><div class="feat-icon">📱</div><div class="feat-title">Any Device</div><div class="feat-desc">Works on desktop, tablet &amp; mobile browsers</div></div>
   </div>
 
-  <p class="powered">Powered by <a href="https://cobalt.tools" target="_blank">cobalt.tools</a> open-source API · For personal &amp; educational use only</p>
-
+  <div class="features">
+    <div class="feat"><div class="feat-icon">⚡</div><div class="feat-title">yt-dlp Powered</div><div class="feat-sub">Always up-to-date YouTube support</div></div>
+    <div class="feat"><div class="feat-icon">🎬</div><div class="feat-title">Up to 4K</div><div class="feat-sub">360p to 2160p video quality</div></div>
+    <div class="feat"><div class="feat-icon">🎵</div><div class="feat-title">MP3 Export</div><div class="feat-sub">128 / 192 / 320 kbps audio</div></div>
+  </div>
 </main>
-
-<footer>Made with <span>♥</span> — YTDrop 2025</footer>
 
 <div class="toast" id="toast">
   <div class="toast-title" id="toastTitle"></div>
@@ -251,127 +219,129 @@ footer span{color:var(--red)}
 </div>
 
 <script>
-let currentTab = 'video';
-let selectedRes = '720';
-let selectedAudio = '192';
+// ── Change this to your deployed backend URL ──────────────────────────────
+const API_BASE = "http://localhost:5000";
+
+let currentTab   = "video";
+let selectedRes  = "720";
+let selectedAudio = "192";
 
 function switchTab(tab) {
   currentTab = tab;
-  document.getElementById('tabVideo').classList.toggle('active', tab === 'video');
-  document.getElementById('tabAudio').classList.toggle('active', tab === 'audio');
-  document.getElementById('resPanel').classList.toggle('visible', tab === 'video');
-  document.getElementById('audioPanel').classList.toggle('visible', tab === 'audio');
-  hideResult(); hideStatus();
+  document.getElementById("tabVideo").classList.toggle("active", tab === "video");
+  document.getElementById("tabAudio").classList.toggle("active", tab === "audio");
+  document.getElementById("resPanel").classList.toggle("visible", tab === "video");
+  document.getElementById("audioPanel").classList.toggle("visible", tab === "audio");
+  hideStatus();
 }
 
 function selectRes(el, res) {
   selectedRes = res;
-  document.querySelectorAll('.res-card').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  const label = res === '2160' ? '4K' : res + 'p';
-  document.getElementById('dlBtnVideo').innerHTML =
+  document.querySelectorAll(".res-card").forEach(c => c.classList.remove("selected"));
+  el.classList.add("selected");
+  const label = res === "2160" ? "4K" : res + "p";
+  document.getElementById("dlBtnVideo").innerHTML =
     `<svg viewBox="0 0 24 24" fill="white" style="width:18px;height:18px;flex-shrink:0"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>Download Video · ${label}`;
-  hideResult();
 }
 
 function selectAudio(el, kbps) {
   selectedAudio = kbps;
-  document.querySelectorAll('.audio-card').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  document.getElementById('dlBtnAudio').innerHTML =
+  document.querySelectorAll(".audio-card").forEach(c => c.classList.remove("selected"));
+  el.classList.add("selected");
+  document.getElementById("dlBtnAudio").innerHTML =
     `<svg viewBox="0 0 24 24" fill="white" style="width:18px;height:18px;flex-shrink:0"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>Download MP3 · ${kbps} kbps`;
-  hideResult();
 }
 
 function setLoading(on) {
-  document.getElementById('mainBtn').disabled = on;
-  document.getElementById('dlBtnVideo').disabled = on;
-  document.getElementById('dlBtnAudio').disabled = on;
+  document.getElementById("dlBtnVideo").disabled = on;
+  document.getElementById("dlBtnAudio").disabled = on;
 }
 
 function showStatus(type, text) {
-  const box = document.getElementById('statusBox');
-  const icon = document.getElementById('statusIcon');
-  document.getElementById('statusText').textContent = text;
-  box.className = 'status-box visible ' + type;
-  if (type === 'loading') { icon.className = 'status-spin'; icon.textContent = ''; }
-  else { icon.className = 'status-icon'; icon.textContent = type === 'success' ? '✅' : '❌'; }
+  const panel = currentTab === "audio" ? "Audio" : "Video";
+  const box  = document.getElementById("statusBox" + panel);
+  const icon = document.getElementById("statusIcon" + panel);
+  document.getElementById("statusText" + panel).textContent = text;
+  box.className = "status-box visible " + type;
+  if (type === "loading") { icon.className = "status-spin"; icon.textContent = ""; }
+  else { icon.className = "status-icon"; icon.textContent = type === "success" ? "✅" : "❌"; }
 }
-function hideStatus() { document.getElementById('statusBox').className = 'status-box'; }
-function hideResult() { document.getElementById('resultLink').classList.remove('visible'); }
+
+function hideStatus() {
+  ["Video","Audio"].forEach(p => {
+    const b = document.getElementById("statusBox" + p);
+    if (b) b.className = "status-box";
+  });
+}
 
 async function triggerDownload() {
-  const url = document.getElementById('urlInput').value.trim();
-  if (!url) { showToast('⚠️ Missing URL', 'Paste a YouTube link first'); return; }
-  if (!url.match(/youtube\.com|youtu\.be/i)) { showToast('⚠️ Invalid URL', 'Please enter a valid YouTube link'); return; }
+  const url = document.getElementById("urlInput").value.trim();
+  if (!url) { showToast("⚠️ URL లేదు", "YouTube link paste చేయండి"); return; }
+  if (!/youtube\.com|youtu\.be/i.test(url)) { showToast("⚠️ Invalid URL", "Valid YouTube link enter చేయండి"); return; }
 
   setLoading(true);
-  hideResult();
-  showStatus('loading', 'Contacting server…');
+  showStatus("loading", "Backend కి request పంపుతున్నాం…");
 
-  const body = currentTab === 'audio'
-    ? { url, downloadMode: 'audio', audioFormat: 'mp3', audioBitrate: selectedAudio }
-    : { url, videoQuality: selectedRes, downloadMode: 'auto', filenameStyle: 'pretty' };
+  const body = currentTab === "audio"
+    ? { url, downloadMode: "audio", audioBitrate: selectedAudio }
+    : { url, downloadMode: "auto", videoQuality: selectedRes };
 
   try {
-    const res = await fetch('https://api.cobalt.tools/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(body)
+    const res = await fetch(`${API_BASE}/api/download`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
     });
 
     if (!res.ok) {
-      const errData = await res.json().catch(() => ({}));
-      const msg = errData?.error?.code || `Server returned ${res.status}`;
-      showStatus('error', msg);
-      showToast('❌ Failed', msg);
+      const err = await res.json().catch(() => ({}));
+      const msg = err?.error?.message || `Server error ${res.status}`;
+      showStatus("error", msg);
+      showToast("❌ Failed", msg);
       setLoading(false);
       return;
     }
 
-    const data = await res.json();
+    // Backend directly streams the file — trigger browser download
+    const blob = await res.blob();
+    const disposition = res.headers.get("Content-Disposition") || "";
+    const nameMatch   = disposition.match(/filename\*?=(?:UTF-8'')?["']?([^"';\n]+)/i);
+    const filename    = nameMatch ? decodeURIComponent(nameMatch[1]) :
+      (currentTab === "audio" ? "audio.mp3" : "video.mp4");
 
-    if (data.url || data.tunnel) {
-      const dlUrl = data.url || data.tunnel;
-      showStatus('success', 'File ready! Click the button below to save.');
-      document.getElementById('dlAnchor').href = dlUrl;
-      document.getElementById('resultLink').classList.add('visible');
-      showToast('🎉 Ready!', currentTab === 'audio'
-        ? `MP3 ${selectedAudio}kbps ready`
-        : `Video ${selectedRes === '2160' ? '4K' : selectedRes + 'p'} ready`);
-    } else if (data.status === 'picker') {
-      showStatus('error', 'Playlists not supported. Use a single video URL.');
-    } else {
-      const msg = data?.error?.code || data.text || 'Could not process this video.';
-      showStatus('error', msg);
-      showToast('❌ Error', msg);
-    }
+    const dlUrl = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = dlUrl; a.download = filename; a.click();
+    URL.revokeObjectURL(dlUrl);
+
+    const label = currentTab === "audio"
+      ? `MP3 ${selectedAudio}kbps`
+      : `Video ${selectedRes === "2160" ? "4K" : selectedRes + "p"}`;
+    showStatus("success", `${label} download మొదలైంది!`);
+    showToast("🎉 Ready!", `${label} download అవుతోంది`);
   } catch (e) {
-    showStatus('error', 'Network error — the API may be temporarily unavailable. Try again.');
-    showToast('❌ Network Error', 'Check your connection and retry');
+    showStatus("error", "Network error — backend running ఉందా?");
+    showToast("❌ Network Error", "localhost:5000 check చేయండి");
   }
 
   setLoading(false);
 }
 
-function copyLink() {
-  const link = document.getElementById('dlAnchor').href;
-  if (!link || link === location.href + '#') { showToast('⚠️ No link', 'Generate a download first'); return; }
-  navigator.clipboard.writeText(link).then(() => showToast('📋 Copied!', 'Download link copied to clipboard'));
-}
-
 function showToast(title, sub) {
-  const t = document.getElementById('toast');
-  document.getElementById('toastTitle').textContent = title;
-  document.getElementById('toastSub').textContent = sub;
-  t.classList.add('show');
+  const t = document.getElementById("toast");
+  document.getElementById("toastTitle").textContent = title;
+  document.getElementById("toastSub").textContent = sub;
+  t.classList.add("show");
   clearTimeout(t._timer);
-  t._timer = setTimeout(() => t.classList.remove('show'), 4000);
+  t._timer = setTimeout(() => t.classList.remove("show"), 4000);
 }
 
-document.getElementById('urlInput').addEventListener('keydown', e => {
-  if (e.key === 'Enter') triggerDownload();
+document.getElementById("urlInput").addEventListener("keydown", e => {
+  if (e.key === "Enter") triggerDownload();
 });
+
+// Pre-select 720p
+document.querySelector('.res-card[onclick*="720"]').classList.add("selected");
 </script>
 </body>
 </html>
